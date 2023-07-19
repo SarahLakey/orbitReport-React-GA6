@@ -1,6 +1,8 @@
+import React from "react";
+import satData from "./satData";
 
 const Table = ({ sat }) => {
-
+  // const data = [{sat}]
   return (
       <table>
        <thead>
@@ -12,20 +14,14 @@ const Table = ({ sat }) => {
         </tr>
         </thead>
         <tbody>
-          { sat.map((data, id) => {
-            return
+          { satData.map((data, id) =>
             <tr key={id}> 
               <td>{data.name}</td>
               <td>{data.type}</td>
               <td>{data.launchDate}</td>
               <td>{data.operational ? "Active" : "Inactive"}</td>
-
-              {/* data.operational === true ? ( <td>Active</td> : 
-               <td>Inactive</td> )
-; */}
-
             </tr>
-            })
+            )
           }        
         </tbody>
       </table>
@@ -33,6 +29,12 @@ const Table = ({ sat }) => {
 };
 
 export default Table;
+
+//!Additional attempts for conditional statement
+
+  {/* data.operational === true ? ( <td>Active</td> : 
+               <td>Inactive</td> )
+; */}
 
 // function ifOperational({sat}) {
 //   if (sat.operational === true){
