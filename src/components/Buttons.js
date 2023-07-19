@@ -1,9 +1,6 @@
 import satData from "./satData";
 
 
-    //!  Part 4.2: Pass the props created from the App() function: filterByType, setSat, and displaySats.
-
-
 const Buttons = (props) => {
   const filterByType = props.filterByType;
   const setSat = props.setSat;
@@ -26,5 +23,3 @@ const Buttons = (props) => {
 };
 
 export default Buttons;
-
-       //! Part 4.4 Inside the <button> tag, create an onClick function that points to setSat. Pass satData to setSat.
