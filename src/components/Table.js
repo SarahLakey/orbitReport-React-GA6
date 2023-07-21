@@ -1,10 +1,8 @@
 import React from "react";
-import satData from "./satData";
 import './styling.css'
 
 
 const Table = ({ sat }) => {
-  // const data = [{sat}]
   return (
       <table>
        <thead>
@@ -31,20 +29,3 @@ const Table = ({ sat }) => {
 };
 
 export default Table;
-
-//!Additional attempts for conditional statement
-
-  {/* data.operational === true ? ( <td>Active</td> : 
-               <td>Inactive</td> )
-; */}
-
-// function ifOperational({sat}) {
-//   if (sat.operational === true){
-//       return (
-//       <td>Active</td>
-//       );
-//     } 
-//       return (
-//         <td>Inactive</td>
-//       )
-//     }
