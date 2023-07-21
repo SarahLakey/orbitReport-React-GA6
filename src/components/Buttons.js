@@ -1,5 +1,5 @@
 import './styling.css'
-import satData from "./satData";
+import  satData  from "./satData";
 import React from "react";
 
 const Buttons = (props) => {
@@ -24,3 +24,4 @@ const Buttons = (props) => {
 };
 
 export default Buttons;
+
