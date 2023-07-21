@@ -1,5 +1,6 @@
+import './styling.css'
 import satData from "./satData";
-
+import React from "react";
 
 const Buttons = (props) => {
   const filterByType = props.filterByType;
@@ -7,7 +8,7 @@ const Buttons = (props) => {
   const displaySats = props.displaySats;
 
     return (
-    <div>
+    <div className='flex-container'>
         {displaySats.map((sat, id) => {
           return (
             <button onClick={() => filterByType(sat)} key={id}>
